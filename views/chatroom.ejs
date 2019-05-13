@@ -1,12 +1,10 @@
 <% include partials/menu %>
+<% include partials/chat-users.ejs %>
 
 <div class="chat-section">
 <div class="ui container grid">
 
-  <!-- Members List Section -->
-  <div class="four wide column">
-    [ TODO chat-users ]
-  </div>
+
 
   <div class="twelve wide column">
 
@@ -21,3 +19,9 @@
   </div>
 </div>
 </div>
+
+<script type="text/javascript">
+  window.onload = function() {
+    loadUsers();
+  }
+  </script>

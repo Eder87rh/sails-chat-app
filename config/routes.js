@@ -20,10 +20,11 @@ module.exports.routes = {
   ***************************************************************************/
 
  '/': {
-  view: 'homepage'
+  view: 'pages/homepage'
   },
   'get /profile': {
-  view: 'profile'
+    controller: 'UserController',
+    action: 'render'
   },
   'get /chat': {
   view: 'chatroom'
