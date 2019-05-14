@@ -1,15 +1,15 @@
 <% include partials/menu %>
-<% include partials/chat-users.ejs %>
 
 <div class="chat-section">
-<div class="ui container grid">
-
+  <div class="ui container grid">
+    
+    <% include partials/chat-users.ejs %>
 
 
   <div class="twelve wide column">
 
     <!-- Chat Messages -->
-    [ TODO chat-messages ]
+    <% include partials/chat-messages.ejs %>
 
     <hr>
 
@@ -23,5 +23,6 @@
 <script type="text/javascript">
   window.onload = function() {
     loadUsers();
+    loadMessages();
   }
   </script>

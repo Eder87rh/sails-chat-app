@@ -36,6 +36,10 @@ module.exports = {
       type: 'string',
       required: false,
       defaultsTo:''
+    },
+    chats: {
+      collection: 'chatMessage',
+      via: 'createdBy'
     }
   }
   };
